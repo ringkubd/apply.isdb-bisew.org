@@ -6,7 +6,7 @@ import {VscIssues} from "react-icons/vsc";
 export default function Footer(){
     return (
         <div className="w-full md:hidden">
-            <section id="bottom-navigation" className="block fixed inset-x-0 bottom-3.5 z-10 bg-white shadow">
+            <section id="bottom-navigation" className="block fixed inset-x-0 bottom-0 z-10 bg-white shadow">
                 <div id="tabs" className="flex justify-between">
                     <Link href="/">
                         <a className="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
