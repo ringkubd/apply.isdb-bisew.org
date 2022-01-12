@@ -74,7 +74,7 @@ export default function Autocomplete({options, value, onChange}) {
                onKeyDown={handleNav}
         />
 
-        <ul className={`absolute w-full rounded-lg shadow-lg ${!showOptions && 'hidden'} select-none`}>
+        <ul className={`absolute w-full z-50 bg-sky-200 rounded-lg shadow-lg ${!showOptions && 'hidden'} select-none`}>
             {filteredOptions.length > 0 ? filteredOptions.map((option, i, arr) => {
                 let className = "px-4 hover:bg-gray-100 "
 
