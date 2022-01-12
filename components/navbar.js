@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import Link from 'next/link'
 import useSWR from 'swr'
-import Header from "./header";
 import Img from 'next/image'
 
 function Navbar() {
@@ -14,7 +13,7 @@ function Navbar() {
     if (!data) return <div className="flex items-center justify-items-center">Loading....</div>
 
    return (
-       <nav className="bg-[#05A0C8] sticky top-0 z-50 overflow-visible" data-aos="fade-down" data-aos-duration={700}>
+       <nav className="bg-[#05A0C8] sticky w-full top-0 z-50 mx-auto" data-aos="fade-down" data-aos-duration={700}>
              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                    <div className="flex items-center">
