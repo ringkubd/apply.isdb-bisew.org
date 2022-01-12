@@ -19,7 +19,7 @@ export default function Autocomplete({options, value, onChange}) {
         }
     }
 
-    const filteredOptions = options.filter(option => option.includes(value))
+    const filteredOptions = value !== "" ? options.filter(option => option.includes(value)) : []
 
     const moveCursorDown = () => {
         if(cursor < filteredOptions.length - 1) {
@@ -67,7 +67,7 @@ export default function Autocomplete({options, value, onChange}) {
 
     return (<div className="relative w-full " ref={ref} >
 
-        <input type="text" className="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3"
+        <input type="text" className="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4"
                value={value}
                onChange={e => handleChange(e.target.value)}
                onFocus={()=> setShowOptions(true)}
@@ -95,7 +95,7 @@ export default function Autocomplete({options, value, onChange}) {
                            key={option}
                            onClick={() => select(option)}
                 >{option}</li>
-            }) : <li className="px-4 py-2 text-gray-500">No results</li>}
+            }) : value === "" ?< li className="px-4 py-2 text-gray-500">Type....</li> :<li className="px-4 py-2 text-gray-500">No results</li>}
 
         </ul>
     </div>)
