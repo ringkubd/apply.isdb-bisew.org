@@ -17,9 +17,9 @@ export default function Home() {
     return (
         <div className="sm:mx-auto">
             <Head>
-                <title>Apply IsDB-BISEW IT Scholarship</title>
+                <title>{ `Apply IsDB-BISEW IT Scholarship` }</title>
             </Head>
-            <Header title="IsDB-BISEW IT Scholarship" />
+            <Header title={`IsDB-BISEW IT Scholarship`} />
 
             <div className="bg-gray-100 mx-auto max-w-6xl bg-white md:py-20 py-10 px-12 lg:px-24 shadow-xl mb-24">
                 <form>

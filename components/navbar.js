@@ -3,6 +3,7 @@ import { Transition } from "@headlessui/react";
 import Link from 'next/link'
 import useSWR from 'swr'
 import Header from "./header";
+import Img from 'next/image'
 
 function Navbar() {
    const [isOpen, setIsOpen] = useState(false);
@@ -18,10 +19,13 @@ function Navbar() {
                 <div className="flex items-center justify-between h-16">
                    <div className="flex items-center">
                       <div className="flex-shrink-0">
-                         <img
+                         <Img
+                             width="50"
+                             height="55"
                              className="h-12 w-12"
                              src="https://isdb-bisew.org/img/isdb-bisew.png"
                              alt="Workflow"
+                             passHref
                          />
                       </div>
                       <div className="hidden md:block">
@@ -29,7 +33,7 @@ function Navbar() {
                              {
                                  data.map((nav, index) => {
                                      return (
-                                         <Link href={nav.path} key={index} data-aos="fade-up">
+                                         <Link href={nav.path} key={index} data-aos="fade-up" passHref>
                                              <p className="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium" data-aos-duration={500} data-aos-delay={100*index}>{nav.name}</p>
                                          </Link>
                                      )
@@ -102,7 +106,7 @@ function Navbar() {
                            {
                                data.map((nav, index) => {
                                    return (
-                                       <Link href={nav.path} key={index}>
+                                       <Link href={nav.path} key={index} passHref>
                                            <p className="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium">{nav.name}</p>
                                        </Link>
                                    )
