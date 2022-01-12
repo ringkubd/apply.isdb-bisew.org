@@ -95,7 +95,7 @@ export default function Autocomplete({options, value, onChange}) {
                            key={option}
                            onClick={() => select(option)}
                 >{option}</li>
-            }) : value === "" ?< li className="px-4 py-2 text-gray-500">Type....</li> :<li className="px-4 py-2 text-gray-500">No results</li>}
+            }) : value === "" ?< li className="px-4 py-2 text-gray-500">Type......</li> :<li className="px-4 py-2 text-gray-500">No results</li>}
 
         </ul>
     </div>)
