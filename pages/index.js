@@ -54,10 +54,9 @@ export default function Home() {
                 <h2 className="text-center font-bold md:text-4xl text-2xl text-green-700">Online Application Form</h2>
             </div>
             <div className="w-full text-2xl font-bold shadow p-4 text-center bg-amber-400">
-                Application Fee 100 Taka
                 <Link href="/bkash_instruction">
-                    <a className="p-1 ml-3 rounded-2xl text-green-700">
-                        <Img height={30} width={45} src="/BKash-Logo.wine.png" /> Payment Instruction
+                    <a className="ml-3 rounded-2xl flex items-center justify-center">
+                        Application Fee 100 Taka <Img className="block sm:inline-block mb-0 pb-0" height={50} width={50} src="/BKash-Icon2-Logo.wine.svg" /> Payment Instruction
                     </a>
                 </Link>
             </div>
