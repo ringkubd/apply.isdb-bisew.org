@@ -55,7 +55,7 @@ export default function Home() {
                 <div className="w-full text-2xl font-bold p-4 text-center">
                     <h2 className="text-center font-bold md:text-4xl text-2xl text-green-700">Online Application Form</h2>
                 </div>
-                <div className="w-full sm:w-2/4 mx-auto font-bold shadow text-center bg-amber-400">
+                <div className="w-full sm:w-2/4 mx-auto sm:font-bold shadow text-center bg-amber-400">
                     <Link href="/bkash_instruction">
                         <a className="rounded-2xl flex flex-wrap items-center justify-center text-center">
                             Application Fee 100 Taka <Img height={35} width={180}  src="/bkash.gif" />
@@ -118,7 +118,8 @@ export default function Home() {
                         </div>
 
                     </div>
-                    <div className="-mx-3 md:flex mb-6">
+                    <div className="group mb-6">
+                    <div className="-mx-3 md:flex">
                         <div className="md:w-1/2 px-3 mb-6 md:mb-0">
                             <label htmlFor="last_degree" className="uppercase tracking-wide text-black text-xs font-bold mb-2">Last Degree<sup className="text-sm text-red-500">*</sup></label>
                             <select onChange={formOnChange} name="last_degree" required id="last_degree" className="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3">
@@ -135,6 +136,8 @@ export default function Home() {
                             <label htmlFor="passing_year" className="uppercase tracking-wide text-black text-xs font-bold mb-2">Passing Year<sup className="text-sm text-red-500">*</sup></label>
                             <input type="number" name="passing_year" required id="passing_year" className="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" />
                         </div>
+                    </div>
+                    <div className="w-full text-red-500 hidden group-hover:block">BSc Engineers/Doctors/Lawyears are not allowed apply for this Scholarship Progarmme</div>
                     </div>
                     {/*TODO*/}
                     <div className="-mx-3 md:flex mb-6">
