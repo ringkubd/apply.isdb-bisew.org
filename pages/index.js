@@ -50,17 +50,18 @@ export default function Home() {
                 দরিদ্র মুসলিম যুব সমাজকে দক্ষ ও পেশাদার পর্যায়ে উন্নীত করাই এই প্রোগাম এর একমাত্র লক্ষ্য ও উদ্দেশ্য।
                 বর্তমানে রাউন্ড-১ থেকে রাউন্ড-২১ পর্যন্ত ১২৭৫ জন এই স্কলারশিপ এর আওতায় ট্রেনিং সম্পন্ন করে দেশ ও দেশের বাহিরে ১৪০টিরও বেশী প্রতিষ্ঠানে কর্মরত আছে।
             </div>
-            <div className="w-full text-2xl font-bold shadow p-4 text-center">
-                <h2 className="text-center font-bold md:text-4xl text-2xl text-green-700">Online Application Form</h2>
-            </div>
-            <div className="w-full text-2xl font-bold shadow p-4 text-center bg-amber-400">
-                <Link href="/bkash_instruction">
-                    <a className="ml-3 rounded-2xl flex flex-wrap items-center justify-center text-center">
-                        Application Fee 100 Taka <Img height={50} width={50} src="/BKash-Icon2-Logo.wine.svg" /> Payment Instruction
-                    </a>
-                </Link>
-            </div>
+
             <div className="bg-gray-50 mx-auto max-w-7xl py-10 px-12 lg:px-24 rounded shadow-xl mb-24">
+                <div className="w-full text-2xl font-bold p-4 text-center">
+                    <h2 className="text-center font-bold md:text-4xl text-2xl text-green-700">Online Application Form</h2>
+                </div>
+                <div className="w-full sm:w-2/4 mx-auto font-bold shadow text-center bg-amber-400">
+                    <Link href="/bkash_instruction">
+                        <a className="rounded-2xl flex flex-wrap items-center justify-center text-center">
+                            Application Fee 100 Taka <Img height={35} width={180}  src="/bkash.gif" />
+                        </a>
+                    </Link>
+                </div>
                 <form>
                     <div className="-mx-3 md:flex mb-6">
                         <div className="md:w-1/2 px-3 mb-6 md:mb-0">

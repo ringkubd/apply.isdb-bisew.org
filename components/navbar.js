@@ -3,6 +3,7 @@ import { Transition } from "@headlessui/react";
 import Link from 'next/link'
 import useSWR from 'swr'
 import Img from 'next/image'
+import {FcAbout} from "react-icons/fc";
 
 function Navbar() {
    const [isOpen, setIsOpen] = useState(false);
@@ -37,6 +38,7 @@ function Navbar() {
                                      )
                                  })
                              }
+                             <a target="_blank" href="https://isdb-bisew.org/" className="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a>
 
                          </div>
                       </div>

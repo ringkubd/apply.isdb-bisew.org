@@ -2,6 +2,7 @@ import {FaHome} from "react-icons/fa";
 import {FcAbout, FcFaq} from "react-icons/fc";
 import Link from 'next/link'
 import {VscIssues} from "react-icons/vsc";
+import {BiDetail} from "react-icons/bi";
 
 export default function Footer(){
     return (
@@ -30,14 +31,20 @@ export default function Footer(){
                             </div>
                         </a>
                     </Link>
-                    <Link href="/about_us" >
-                        <a className="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
+                    <Link href="/course_details" >
+                        <a  className="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
                             <div>
-                                <FcAbout className="inline-block text-2xl mb-1" />
-                                <span className="tab tab-home block text-xs">About Us</span>
+                                <BiDetail className="inline-block text-green-700 text-2xl mb-1" />
+                                <span className="tab tab-home block text-xs">Course Details</span>
                             </div>
                         </a>
                     </Link>
+                    <a href="https://isdb-bisew.org/" className="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
+                        <div>
+                            <FcAbout className="inline-block text-2xl mb-1" />
+                            <span className="tab tab-home block text-xs">About Us</span>
+                        </div>
+                    </a>
                 </div>
             </section>
         </div>
