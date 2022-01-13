@@ -42,6 +42,9 @@ function Navbar() {
 
                          </div>
                       </div>
+                       <div className="block md:hidden text-white ml-2">
+                           IsDB-BISEW IT Scholarship Programme
+                       </div>
                    </div>
                    {/*<div className="-mr-2 flex md:hidden">*/}
                    {/*   <button*/}

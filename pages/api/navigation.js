@@ -11,10 +11,6 @@ export default function handler(req, res){
                 path: "/faq",
             },
             {
-                name: "Course Outcome",
-                path: "/course_outcome",
-            },
-            {
                 name: "Course Details",
                 path: "/course_outcome",
             }

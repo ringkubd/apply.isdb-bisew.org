@@ -38,9 +38,9 @@ export default function Home() {
             <Head>
                 <title>{ `Apply IsDB-BISEW IT Scholarship` }</title>
             </Head>
-            <Header title={`IsDB-BISEW IT Scholarship Programme`} />
+            <Header className="hidden md:block" title={`IsDB-BISEW IT Scholarship Programme`} />
             <div className="w-full py-2 shadow min-h-max text-center rounded-lg">
-                <h1 className="text-4xl">Round - 52</h1>
+                <h1 className="text-2xl">Round - 52</h1>
                 <h2 className="flex items-center justify-center">
                     <BiAlarm className="animate-ping text-red-500 text-xl" /> Application Deadline: <span className="text-red-700 ml-2"> 28-February-2022</span>
                 </h2>
@@ -119,25 +119,25 @@ export default function Home() {
 
                     </div>
                     <div className="group mb-6">
-                    <div className="-mx-3 md:flex">
-                        <div className="md:w-1/2 px-3 mb-6 md:mb-0">
-                            <label htmlFor="last_degree" className="uppercase tracking-wide text-black text-xs font-bold mb-2">Last Degree<sup className="text-sm text-red-500">*</sup></label>
-                            <select onChange={formOnChange} name="last_degree" required id="last_degree" className="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3">
-                                <option value="honours_fazil_degree_pass">Honours / Fazil / Degree Pass</option>
-                                <option value="kamil_masters">Master's / Kamil</option>
-                                <option value="4 Year Diploma">4 Year Diploma</option>
-                            </select>
+                        <div className="-mx-3 md:flex">
+                            <div className="md:w-1/2 px-3 mb-6 md:mb-0">
+                                <label htmlFor="last_degree" className="uppercase tracking-wide text-black text-xs font-bold mb-2">Last Degree<sup className="text-sm text-red-500">*</sup></label>
+                                <select onChange={formOnChange} name="last_degree" required id="last_degree" className="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3">
+                                    <option value="honours_fazil_degree_pass">Honours / Fazil / Degree Pass</option>
+                                    <option value="kamil_masters">Master's / Kamil</option>
+                                    <option value="4 Year Diploma">4 Year Diploma</option>
+                                </select>
+                            </div>
+                            <div className="md:w-1/2 px-3 mb-6 md:mb-0">
+                                <label htmlFor="subject" className="uppercase tracking-wide text-black text-xs font-bold mb-2">Subject<sup className="text-sm text-red-500">*</sup></label>
+                                <Autocomplete options={data} onChange={onChange} value={selectValue}/>
+                            </div>
+                            <div className="md:w-1/2 px-3 mb-6 md:mb-0">
+                                <label htmlFor="passing_year" className="uppercase tracking-wide text-black text-xs font-bold mb-2">Passing Year<sup className="text-sm text-red-500">*</sup></label>
+                                <input type="number" name="passing_year" required id="passing_year" className="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" />
+                            </div>
                         </div>
-                        <div className="md:w-1/2 px-3 mb-6 md:mb-0">
-                            <label htmlFor="subject" className="uppercase tracking-wide text-black text-xs font-bold mb-2">Subject<sup className="text-sm text-red-500">*</sup></label>
-                            <Autocomplete options={data} onChange={onChange} value={selectValue}/>
-                        </div>
-                        <div className="md:w-1/2 px-3 mb-6 md:mb-0">
-                            <label htmlFor="passing_year" className="uppercase tracking-wide text-black text-xs font-bold mb-2">Passing Year<sup className="text-sm text-red-500">*</sup></label>
-                            <input type="number" name="passing_year" required id="passing_year" className="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" />
-                        </div>
-                    </div>
-                    <div className="w-full text-red-500 hidden group-hover:block">BSc Engineers/Doctors/Lawyears are not allowed apply for this Scholarship Progarmme</div>
+                        <div className="w-full text-red-500 hidden group-hover:block group-focus:block">BSc Engineers/Doctors/Lawyears are not allowed apply for this Scholarship Progarmme</div>
                     </div>
                     {/*TODO*/}
                     <div className="-mx-3 md:flex mb-6">

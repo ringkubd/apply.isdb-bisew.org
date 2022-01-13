@@ -23,14 +23,6 @@ export default function Footer(){
                             </div>
                         </a>
                     </Link>
-                    <Link href="/course_outcome" >
-                        <a  className="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
-                            <div>
-                                <VscIssues className="inline-block text-green-700 text-2xl mb-1" />
-                                <span className="tab tab-home block text-xs">Course Outcome</span>
-                            </div>
-                        </a>
-                    </Link>
                     <Link href="/course_details" >
                         <a  className="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
                             <div>
