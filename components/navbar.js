@@ -13,7 +13,7 @@ function Navbar() {
     if (!data) return <div className="flex items-center justify-items-center">Loading....</div>
 
    return (
-       <nav className="bg-[#05A0C8] sticky w-full top-0 z-50 mx-auto" data-aos="fade-down" data-aos-duration={700}>
+       <nav className="bg-[#002147] sticky w-full top-0 z-50 mx-auto" data-aos="fade-down" data-aos-duration={700}>
              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                    <div className="flex items-center">
@@ -24,7 +24,6 @@ function Navbar() {
                              className="h-12 w-12"
                              src="https://isdb-bisew.org/img/isdb-bisew.png"
                              alt="Workflow"
-                             passHref
                          />
                       </div>
                       <div className="hidden md:block">
