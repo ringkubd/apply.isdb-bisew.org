@@ -39,7 +39,7 @@ export default function Footer(){
                             </div>
                         </a>
                     </Link>
-                    <a href="https://isdb-bisew.org/" className="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
+                    <a href="https://isdb-bisew.org/" target="_blank" rel="noreferrer" className="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
                         <div>
                             <FcAbout className="inline-block text-2xl mb-1" />
                             <span className="tab tab-home block text-xs">About Us</span>

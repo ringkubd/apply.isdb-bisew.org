@@ -38,7 +38,7 @@ function Navbar() {
                                      )
                                  })
                              }
-                             <a target="_blank" href="https://isdb-bisew.org/" className="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a>
+                             <a target="_blank" href="https://isdb-bisew.org/" rel="noreferrer" className="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a>
 
                          </div>
                       </div>
