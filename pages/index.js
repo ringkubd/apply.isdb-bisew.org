@@ -55,8 +55,8 @@ export default function Home() {
             </div>
             <div className="w-full text-2xl font-bold shadow p-4 text-center bg-amber-400">
                 <Link href="/bkash_instruction">
-                    <a className="ml-3 rounded-2xl flex items-center justify-center">
-                        Application Fee 100 Taka <Img className="block sm:inline-block mb-0 pb-0" height={50} width={50} src="/BKash-Icon2-Logo.wine.svg" /> Payment Instruction
+                    <a className="ml-3 rounded-2xl flex flex-wrap items-center justify-center text-center">
+                        Application Fee 100 Taka <Img height={50} width={50} src="/BKash-Icon2-Logo.wine.svg" /> Payment Instruction
                     </a>
                 </Link>
             </div>
